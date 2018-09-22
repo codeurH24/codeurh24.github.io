@@ -147,14 +147,16 @@
     </main>
     <script>
         $(document).ready(function(){
+            // Met tout les details cachés sauf le premier descriptif:
+            // Déploi "METHODES, LANGAGES, LOGICIELS, SYSTEMES ET MATERIELS"
             $(".infos").css('display', 'none');
+            $(".infos").eq(0).slideDown("slow");
+
+            // Permet de déplier les contenus que les h3 represente.
             $("h3").click(function(){
-                //$("").slideToggle("slow");
                 var n = $(this).index("h3");
                 $(".infos").slideUp("slow");
-                $(".infos").eq( n ).slideDown("slow");
-                //alert( $(this).index("h3")   );
-
+                $(".infos").eq(n).slideDown("slow");
             });
         })
     </script>

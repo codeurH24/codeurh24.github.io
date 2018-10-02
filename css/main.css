@@ -86,8 +86,40 @@ h3{
   margin-bottom: -1px;
 }
 
+strong{
+  display: none;
+}
+
 @media screen and (max-width: 580px) {
   #coordonnes img{
     display: none;
+  }
+  #coordonnes p{
+    display: block;
+  }
+  strong{
+    display: block;
+    text-align: left;
+  }
+  h1, h2 {;
+    font-size: 33px;
+  }
+  h1{
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 375px) {
+
+  strong{
+    margin-top: 15px;
+  }
+  .row .col {
+      float: none;
+  }
+  .row .col.s6 {
+    margin-left: unset;
+  }
+  #coordonnes .col {
+    height: auto;
   }
 }
